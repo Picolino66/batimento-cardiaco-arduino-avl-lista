@@ -1,0 +1,21 @@
+O projeto consiste em um sistema de coleta de batimentos cardíacos através
+de um sensor, para o usuário possa verificar as últimas leituras obtidas com as
+últimas médias salvas no arquivo.
+Ao ativar o microcontrolador(Arduino Uno) é aceso o led amarelo para indicar
+a realização da leitura de arquivo e mostra os dados no serial monitor(caso houver
+arquivo).
+A coleta inicia quando pressionar o sensor com o polegar e o indicador para
+receber os batimentos, esses dados são inseridos em uma lista quando a lista tiver
+tamanho 30, inicia o processo de fazer a média dos valores obtidos, e então a média
+é inserida na árvore, quando tiver 20 itens inseridos na árvore é ativado um led
+verde para indicar a realização da busca de menor valor e maior valor e serão salvos
+no arquivo.
+
+Estruras de dados :
+ Lista de encadeamento simples.
+ Árvore AVL.
+Componentes :
+ Arduino Uno.
+ Sensor de batimentos cardiácos.
+ Módulo de cartão SD.
+ 2x Leds (verde e amarelo)
